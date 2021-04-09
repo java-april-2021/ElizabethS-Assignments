@@ -1,7 +1,7 @@
-import java.lang;
+
 
 public class Pythagorean {
-    public static double calculateHypotenuse (int lenA, int lenB) {
+    public double calculateHypotenuse (int lenA, int lenB) {
         return Math.sqrt((lenA * lenA ) + (lenB * lenB));
     }
 }
