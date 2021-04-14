@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class BasicJava {
+public class Basics {
 
 // Print 1-255
 // Write a method that prints all the numbers from 1 to 255.
@@ -25,4 +25,5 @@ public int getArraySum(int[] numbers) {
         sum += numbers [i];
     }
     return sum;
+}
 }
