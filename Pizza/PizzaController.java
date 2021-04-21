@@ -5,8 +5,9 @@ public class PizzaController{
         Pizza cheesePizza = 
             new Pizza("Cheese Pizza", 
             new String[] {"cheese"}, 'L', 10);
+            //This is an instance.  The list is passing in perameters to the constructor over in the main program.
         Pizza hawaiian = new Pizza("Hawaiiian", 
-            new String[] {"pineapple", "canadian bacon", "pepperoni", "jalapenos"}, 'L', 10)
+            new String[] {"pineapple", "canadian bacon", "pepperoni", "jalapenos"}, 'L', 10);
 
             //set attributes (object.attribute = value)
             

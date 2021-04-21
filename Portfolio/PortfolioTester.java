@@ -1,34 +1,29 @@
-public class PortfolioTester{
-    public static void main(String[] args){
-        Projects p = new Projects();
+public class PizzaController{
+    public static void main(String[] args) {
+        //Create a new object (class name, variable name = new class name)
+        //Seet attributes value parameters
+        Pizza cheesePizza = 
+            new Pizza("Cheese Pizza", 
+            new String[] {"cheese"}, 'L', 10);
+            //This is an instance.  The list is passing in perameters to the constructor over in the main program.
+        Pizza hawaiian = new Pizza("Hawaiiian", 
+            new String[] {"pineapple", "canadian bacon", "pepperoni", "jalapenos"}, 'L', 10);
 
-//     private String name;
-//     private String description;
-//     private double initialCost = 0;
-//     private static String defaultName = "Default NAME";
-//     private static String defaultDesc = "Default DESC";
+            //set attributes (object.attribute = value)
+            
+            // cheesePizza.setSlices = (8);
+            // System.out.println(cheesePizza.getslices());
+            // cheesePizza.setName("");
+            // System.out.println(cheesePizza.getName());
+            // cheezePizza.setName("The best cheese pizza ever!")
+            // System.out.println(cheesePizza.getName());
 
-//     public String getName() { return name; }
-//     public String getDescription() { return description; }
-//     public double getCost() { return initialCost; }
+            // Another way to set attributes is once you set the delimiter you can:
+            cheesePizza.displayPizza();
 
-//     public void setName(String name) { this.name = name; }
-//     public void setDescription(String description) { this.description = description; }
-//     public String ElevatorPitch() {
-//         return String.format("%s (%02f) %s", name, initialCost, description);
-//     }
-
-//     public Project(String name, String description, double cost) {
-//         this.name = name;
-//         this.initialCost = cost;
-//         this.description = description;
-//     }
-//     public Project(String name) {
-//         this.name = name;
-//         this.description = defaultDesc;
-//     }
-//     public Project() {
-//         name = defaultName;
-//         description = defaultDesc;
-     }
- }
+            Pizza.advertise();
+            System.out.println(Pizza.totalPizzas);
+            hawaiian.pizzaFight(cheesePizza);
+    }
+    
+}

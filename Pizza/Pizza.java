@@ -10,10 +10,10 @@ public class Pizza {
 
     //Methods (Things you can do with the pizza object)
     //Constructor
-    public Pizza(String name; String[] toppings, char size, int slices){
+    public Pizza(String name, String[] toppings, char size, int slices){
         this.name = name;
-        this.toppings= topings;
-        this.size;
+        this.toppings = toppings;
+        this.size = size;
         this.slices = slices;
         //incrament the number of pizzas 
         this.totalPizzas = this.totalPizzas +=1;
@@ -29,7 +29,7 @@ public class Pizza {
         return this.name;
     }
     public String [] getToppings(){
-        return this.toppings
+        return this.toppings;
     }
     public char getSize(){
         return this.size;
@@ -83,13 +83,14 @@ public class Pizza {
     //cause objects to interact by using getters and setters already created.
     public void pizzaFight(Pizza otherPizza){
         int otherSlices = otherPizza.getSlices();
-        otherPizza.setSlices(otherPizza.getSlices() += 1);
-        otherPizza.setSlices(otherslices -+ 1);
+        otherPizza.setSlices(otherPizza.getSlices() + 1);
+        otherPizza.setSlices(otherSlices - 1);
         System.out.println(this.name + "just took a slice out of " + otherPizza.getName());
-        System.out.println(otherPizza.getname() + "now has " + otherPizza.getSlices() + " slices.");
+        System.out.println(otherPizza.getName() + "now has " + otherPizza.getSlices() + " slices.");
     }
     
     //Static affixes a method to the class itself, and not the object.
     public static void advertise(){
         System.out.println("Hey, come to my pizza shop");
     }
+}
