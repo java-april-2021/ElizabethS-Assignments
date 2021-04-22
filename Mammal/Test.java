@@ -1,16 +1,19 @@
-Public class Test {
+public class Test {
     public static void main(String[] args){
-        bat gramberia = new Bat("name", 300);
-        System.out.println(gramberia);
-        name.attackTown().attackTown().displayEnergy();
-        name.eatHumans().eatHumans().displayEnergy();
-        name.eatHumans().eatHumans().displayEnergy();
-        name.fly().fly().displayEnergy();
-        Gorilla gory = new Gorilla("Harambi", 200);
-        System.out.println(gory);
-        harambi.throwSomething().throwSomething().throwSomething().displayEnergy();
-        harambi.eatBanannas().eatBannas().displayEnergy();
-        harambi.climb().isplayEnergy();
+
+        Bat Batilda = new Bat("Batilda", 300); 
+        Gorilla Gertrude = new Gorilla("Gertrude", 200); 
+
+        System.out.println(Batilda);
+        System.out.println(Gertrude);
+
+        Batilda.fly().displayEnergy();
+        Batilda.eatHumans().displayEnergy();
+        Batilda.attackTown().displayEnergy();
+        
+        Gertrude.eatBanana().displayEnergy();
+        Gertrude.throwSomething().displayEnergy();
+        Gertrude.climb().displayEnergy();
 
     }
 }

@@ -1,35 +1,33 @@
 public class Mammal {
-    protected String species;
-    protected int health;
-    static int totalHealth;
-    }
+    protected String name;
+    protected int energy;
     
-    public Mammal(String species, int health){
-        this.species = species;
-        this.health = health;
+    
+//constructor
+    public Mammal(String name, int energy){
+        this.name = name;
+        this.energy = energy;
     }
 
-    public String getSpecies(){
-        return this.species;
+    public int displayEnergy(){
+        System.out.println(this.name + " has " + this.energy + " energy left");
+        return this.energy;
     }
 
-    public void setSpecies(String species){
-        this.species = species;
+    public String getName(){
+        return this.name;
     }
 
-    public int getHealth(){
-        return this.health;
+    public void setName(String name){
+        this.name = name;
     }
 
-    public void setHealth(int health){
-        this.health = health;
+    public int getEnergy(){
+        return this.energy;
     }
 
-    public void attack(Attackable target){
-        //decrament health
-        int targetsHealth = target.getHealth();
-        targetsHealth -= 5;
-        target.setHealth(targetsHealth);
-        System.out.println(this.species + " smacked the target for " + target.getHealth());
+    public void setEnergy(int energy){
+        this.energy = energy;
     }
 }
+
