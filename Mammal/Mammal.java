@@ -1,7 +1,9 @@
-public class Mammal implements Attackable{
+public class Mammal {
     protected String species;
     protected int health;
-
+    static int totalHealth;
+    }
+    
     public Mammal(String species, int health){
         this.species = species;
         this.health = health;
@@ -25,8 +27,8 @@ public class Mammal implements Attackable{
 
     public void attack(Attackable target){
         //decrament health
-        targetsHealth = target.gethealth();
-        targetsHealth - 5;
+        int targetsHealth = target.getHealth();
+        targetsHealth -= 5;
         target.setHealth(targetsHealth);
         System.out.println(this.species + " smacked the target for " + target.getHealth());
     }

@@ -1,22 +1,29 @@
 public class Project {
-    private String name;
-    private String description;
-
-
-    public Project(){
-        this.name = name;
-        this.description = description;
+    public String proj(String name){
+        return createProject(name);
+    }
+    public String proj() {
+        return createProject("My project");
+    }
+    
+    public String proj(String description) {
+        return createProject(name + " " + description);
     }
 
-    public String getName(){
+    private String createProject(String toBeCreated){
+        return "My project" + toBeCreated + ", was successfully created";
+    }
+
+
+    public String getName() {
         return this.name;
     }
-    public String getDescription(){
+    public String getDescription() {
         return this.description;
     }
 
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name; 
         }
         
@@ -24,4 +31,5 @@ public class Project {
     public void setDescription(String description) {
         this.description = description;
     }
+}
 }
