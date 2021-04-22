@@ -8,6 +8,8 @@ public class HumanTest {
         System.out.println(target);
 
         aHuman.attack(target);
+        samurai.meditate()
+    
 
     }
 }
