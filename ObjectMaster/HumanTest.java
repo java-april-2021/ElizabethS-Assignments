@@ -3,13 +3,15 @@ public class HumanTest {
 
         Human aHuman = new Human(); 
         Human target = new Human(); 
+        Samurai aSamurai = new Samurai();
+        Wizard aWizard = new Wizard();
+        Ninja aNinja = new Ninja();
 
         System.out.println(aHuman);
         System.out.println(target);
 
         aHuman.attack(target);
-        samurai.meditate()
-    
+        aSamurai.meditate();
 
     }
 }
