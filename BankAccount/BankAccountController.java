@@ -1,3 +1,4 @@
+public class BankAccountController{
 public static void main(String[] args) {
     BankAccount ba = new BankAccount();
     ba.depositMoney(100.49, "checking");
@@ -11,5 +12,5 @@ public static void main(String[] args) {
     ba.displayAccountBalance();
 
     System.out.println(BankAccount.totalHoldings);
-}
+    }
 }

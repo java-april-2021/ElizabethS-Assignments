@@ -66,3 +66,4 @@ public class BankAccount {
 		// %.2f formats decimal to the 10s place (like for moniez)
 		System.out.println(String.format("Savings: %.2f, Checking: %.2f", this.savingsBalance, this.checkingBalance));
 	}
+}
